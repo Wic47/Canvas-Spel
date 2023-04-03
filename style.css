@@ -1,11 +1,10 @@
-
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
 #canvas {
-    background-color: #111111;
+  background-color: #111111;
 }

@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById("canvas")
 const c = canvas.getContext("2d")
 const width = canvas.width
@@ -7,19 +8,29 @@ window.focus
 const ship =  {
     x: width/2,
     y: height/2,
-    dy: 3,
-    dx: 3,
+    dy: 4,
+    dx: 4,
     movement: {
         forward: false,
         right: false,
         left: false
     },
     draw() {
-        c.font = "30px Arial"
+        c.font = "30px Ruda"
         c.fillStyle = "white"
         c.fillText("A", ship.x, ship.y)
     }
 }
+
+const bullet = {
+    x: ship.x,
+    y: ship.y,
+    dy: 5,
+    dx: 5,
+
+}
+
+let bullets = []
 
 document.addEventListener("keydown", e => {
     const key = e.key
@@ -48,6 +59,7 @@ document.addEventListener("keyup", e => {
         ship.movement.right = false
     }
 })
+
 
 function draw() {
     requestAnimationFrame(draw)
