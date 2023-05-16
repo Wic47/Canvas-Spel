@@ -1,10 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+}
+
 body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 #canvas {
-    background-color: rgba(44, 135, 226, 0.267);
+  background-color: rgba(44, 135, 226, 0.267);
+}
+
+#score {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 123312;
+  justify-content: center;
+  font-size: 5vw;
+  font-family: Ubuntu;
+  color: white;
+}
+
+#game-over {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  font-family: Ubuntu;
+  color: white;
+  flex-direction: column;
+}
+
+#try-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 10vh;
+  background-color: black;
+  font-size: 3vw;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#high-score {
+  font-size: 4vw;
+  margin-bottom: 5vh;
+}
+
+h1 {
+  font-size: 7.5vw;
 }
